@@ -20,7 +20,7 @@ function draw(){
 
         for(i=0; i<objects.length; i++){
 
-            document.getElementById("Status").innerHTML="Status : Object Detected";
+            document.getElementById("status").innerHTML="Status : Object Detected";
             fill("#FF0000");
             percent=floor(objects[i].confidence*100);
             text(objects[i].label+" "+percent+"%",objects[i].x+15,objects[i].y+15);
